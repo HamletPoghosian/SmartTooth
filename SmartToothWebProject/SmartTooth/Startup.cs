@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using SmartTooth.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SmartTooth.Services.Dentist;
 
 namespace SmartTooth
 {
@@ -39,7 +40,7 @@ namespace SmartTooth
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-
+            services.AddDentist();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -68,7 +69,7 @@ namespace SmartTooth
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Dentist}/{action=Index}/{id?}");
             });
         }
     }

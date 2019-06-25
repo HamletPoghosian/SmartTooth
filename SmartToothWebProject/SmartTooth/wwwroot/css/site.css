@@ -35,3 +35,10 @@ body {
         display: none;
     }
 }
+.dentistForm {
+display:flex;
+}
+.dentsitItem {
+    margin: 3%;
+    color: forestgreen;
+}

@@ -25,6 +25,7 @@ namespace SmartTooth.Controllers
         {
             return View();
         }
+       
         [HttpPost]
         public async Task<IActionResult> CreateDentist(Dentist model)
         {

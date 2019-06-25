@@ -1,4 +1,29 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<div class="TopHome">
+    <div class="OneHome">
 
+    </div>
+    <div class="OneHome">
+
+    </div>
+    <div class="OneHome">
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+    $(".OneHome").hover(function () {
+        $(this).filter(':not(:animated)').animate({
+            width: "100%",
+            opacity: 0.7,
+        }, 500);
+
+    }, function () {
+        $(this).animate({
+            width: "100px",
+        }, 500);
+    });
+</script>

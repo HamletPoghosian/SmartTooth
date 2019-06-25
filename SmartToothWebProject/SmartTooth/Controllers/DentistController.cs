@@ -37,5 +37,10 @@ namespace SmartTooth.Controllers
             }
             return View();
         }
+        public IActionResult AllDentist()
+        {
+            IEnumerable<Dentist> allDentist = _dentist.AllDentistsAsync();
+            return View(allDentist);
+        }
     }
 }

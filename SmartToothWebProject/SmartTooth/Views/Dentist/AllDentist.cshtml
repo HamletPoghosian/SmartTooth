@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Dentist>
+
+@{
+    ViewData["Title"] = "AllDentist";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>AllDentist</h2>
+
+<div>
+    @{
+        foreach (var dentist in Model)
+        {
+    <div class="form-inline">
+        <p>
+            @dentist.Name;
+        </p>
+        <p>
+            @dentist.LastName;
+        </p>
+        <p>
+            @dentist.Number;
+        </p>
+        <p>
+            @dentist.Popularity;
+        </p>
+        <p>
+
+            <a href="mailto: @dentist.Email;">EMail</a>
+           
+        </p>
+        <p>
+            <a href="@dentist.FacebookUrl;">FacebookUrl</a>
+            
+        </p>
+        <p>
+            @dentist.Description;
+        </p>
+        <p>
+            @dentist.Popularity;
+        </p>
+        <a asp-action="Edit" asp-route-id="@dentist.Id">Edit</a>
+    </div>
+
+        }
+
+
+
+    }
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

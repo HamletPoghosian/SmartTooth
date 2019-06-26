@@ -3,7 +3,7 @@ for details on configuring this project to bundle and minify static web assets. 
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color:black;
+    background-color: black;
 }
 
 /* Wrapping element */
@@ -45,7 +45,8 @@ body {
 }
 
 .dentsitItem {
-    background-color: #669999;
+    width: 100%;
+    background-color: #002d4b;
     margin: 3%;
     font-size: 25px;
     color: black;
@@ -56,52 +57,63 @@ body {
     height: 1000px;
     background-image: url();
     background-color: #000000;
-    position:absolute;
+    position: absolute;
 }
+
 .imgtop {
     width: 100%;
     height: 900px;
     position: absolute;
 }
+
 .OneHome {
     width: 300px;
     overflow: hidden;
     -webkit-transition: width 1s;
     height: 300px;
     background-color: #0c1d2a;
-    
     position: relative;
 }
+
     .OneHome:hover {
         width: 100%;
         opacity: 0.9;
-       position: relative;
+        position: relative;
     }
+
 .imgMasnaget {
-width:100px;
-height:auto;
-margin:auto;
-display:flex;
+    width: 100px;
+    height: auto;
+    margin: auto;
+    display: flex;
 }
-.imgMasnaget:hover {
-display:ruby-text;
-}
+
+    .imgMasnaget:hover {
+        display: ruby-text;
+    }
+
 .ParagText {
     width: 100%;
     font-size: 25px;
     text-decoration: none;
 }
-.ParagText:hover {
-    width: 100%;
-    
-    color:aliceblue;
-    font-size: 25px;
-    text-decoration: none;
-}
+
+    .ParagText:hover {
+        width: 100%;
+        color: aliceblue;
+        font-size: 25px;
+        text-decoration: none;
+    }
 
 .ParagTextCenter {
-text-align:center;
-overflow:auto;
-font-size:20px;
-color:aliceblue;
+    text-align: center;
+    overflow: auto;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.PValue {
+    text-align: center;
+    font-size: 20px;
+    color: white;
 }

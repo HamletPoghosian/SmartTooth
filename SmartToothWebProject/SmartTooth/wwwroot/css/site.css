@@ -72,7 +72,9 @@ body {
     -webkit-transition: width 1s;
     height: 300px;
     background-color: #0c1d2a;
+
     position: relative;
+
 }
 
     .OneHome:hover {

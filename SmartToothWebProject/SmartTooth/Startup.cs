@@ -72,7 +72,7 @@ namespace SmartTooth
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Dentist}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

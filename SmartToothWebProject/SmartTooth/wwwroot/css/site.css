@@ -27,6 +27,7 @@ body {
 #qrCode {
     margin: 15px;
 }
+
 .container {
     width: 95%;
 }
@@ -37,22 +38,52 @@ body {
         display: none;
     }
 }
+
 .dentistForm {
-display:flex;
+    display: flex;
 }
+
 .dentsitItem {
     background-color: #669999;
     margin: 3%;
-    font-size:25px;
+    font-size: 25px;
     color: black;
 }
+
 .TopHome {
-width:100%;
-height:1000px;
-background-color:#f1e7e7;
+    width: 100%;
+    height: 1000px;
+   
+    background-color: #000000;
 }
+
 .OneHome {
-    width:100%;
+    width: 100px;
+    overflow: hidden;
+    -webkit-transition: width 1s;
     height: 333px;
-    background-color: #b6ff00;
+    background-color: #58001e;
+}
+    .OneHome:hover {
+    width:100%;
+    opacity:0.6;
+    }
+
+.ParagText {
+    width: 100%;
+    font-size: 120px;
+    text-decoration: none;
+}
+.ParagText:hover {
+    width: 100%;
+    color:aliceblue;
+    font-size: 120px;
+    text-decoration: none;
+}
+
+.ParagTextCenter {
+text-align:center;
+overflow:auto;
+font-size:20px;
+color:aliceblue;
 }

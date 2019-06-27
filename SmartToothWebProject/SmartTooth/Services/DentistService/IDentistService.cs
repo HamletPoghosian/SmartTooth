@@ -16,5 +16,6 @@ namespace SmartTooth.Services.Dentist
         Task<Models.Dentist> GetDentistAsync(Guid Id);
 
         IEnumerable<Models.Dentist> AllDentistsAsync();
+
     }
 }

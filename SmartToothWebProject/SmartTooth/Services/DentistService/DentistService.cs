@@ -11,10 +11,12 @@ namespace SmartTooth.Services.Dentist
     public class DentistService : IDentistService
     {
         private ApplicationDbContext _context;
+
         public DentistService(ApplicationDbContext context)
         {
             _context = context;
         }
+
         public async Task<Models.Dentist> AddAsync(Models.Dentist model)
         {
             var entity = new Models.Dentist

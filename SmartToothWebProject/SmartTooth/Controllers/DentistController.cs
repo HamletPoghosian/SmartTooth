@@ -12,14 +12,17 @@ namespace SmartTooth.Controllers
     public class DentistController : Controller
     {
         private IDentistService _dentist;
+
         public DentistController(IDentistService dentist)
         {
             _dentist = dentist;
         }
+
         public IActionResult Index()
         {
             return View();
         }
+
         [HttpGet]
         public IActionResult CreateDentist()
         {
@@ -37,6 +40,7 @@ namespace SmartTooth.Controllers
             }
             return View();
         }
+
         public IActionResult AllDentist()
         {
             IEnumerable<Dentist> allDentist = _dentist.AllDentistsAsync();

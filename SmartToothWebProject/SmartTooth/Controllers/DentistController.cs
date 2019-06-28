@@ -12,7 +12,7 @@ namespace SmartTooth.Controllers
     public class DentistController : Controller
     {
         private IDentistService _dentist;
-        public DentistController(IDentistService dentist )
+        public DentistController(IDentistService dentist)
         {
             _dentist = dentist;
         }
@@ -25,15 +25,15 @@ namespace SmartTooth.Controllers
         {
             return View();
         }
-       
+
         [HttpPost]
         public async Task<IActionResult> CreateDentist(Dentist model)
         {
             if (ModelState.IsValid)
             {
-             model.Id = new Guid();
-             await _dentist.AddAsync(model);
-             return RedirectToAction(nameof(Index));
+                model.Id = new Guid();
+                await _dentist.AddAsync(model);
+                return RedirectToAction(nameof(Index));
             }
             return View();
         }

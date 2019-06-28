@@ -51,6 +51,7 @@ namespace SmartTooth
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ApplicationDbContext _context)
         {
             _context.Database.Migrate();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

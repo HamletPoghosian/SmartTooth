@@ -7,7 +7,7 @@
 <h2>CreateDentist</h2>
 
 <div>
-    <form asp-action="CreateDentist" method="post">
+    <form asp-action="CreateDentist" asp-controller="Dentist" method="post">
         <div asp-validation-summary="All">
             <div>
                 <input asp-for="Name" placeholder="Name" type="text" name="name" />

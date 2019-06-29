@@ -12,5 +12,11 @@ namespace SmartTooth.Controllers
         {
             return View();
         }
+
+        public IActionResult Facility()
+        {
+            ViewBag.Facility = DateTime.Now;
+            return View();
+        }
     }
 }

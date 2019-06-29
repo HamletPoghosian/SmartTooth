@@ -20,6 +20,7 @@ namespace SmartTooth.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.MyModel = DateTime.Now; ;
             return View();
         }
 

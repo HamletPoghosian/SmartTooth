@@ -32,6 +32,7 @@ namespace SmartTooth.Models
         [Required(ErrorMessage = "Please enter a  Specialization")]
         public string Specialization { get; set; }
 
+        [EmailAddress(ErrorMessage = "Please enter a  Email")]
         [Required(ErrorMessage = "Please enter a  Email")]
         public string Email { get; set; }
 

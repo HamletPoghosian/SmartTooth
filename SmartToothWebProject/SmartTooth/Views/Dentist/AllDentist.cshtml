@@ -16,29 +16,39 @@
                 <p class="PValue">
                     @dentist.Name
                 </p>
+
                 <p class="PValue">
                     @dentist.LastName
                 </p>
+
                 <p class="PValue">
                     @dentist.Number
                 </p>
+
                 <p class="PValue">
                     @dentist.Popularity
                 </p>
+
                 <p class="PValue">
                     <a href="mailto: @dentist.Email">EMail</a>
                 </p>
+
                 <p class="PValue">
                     <a href="@dentist.FacebookUrl">FacebookUrl</a>
                 </p>
+
                 <p class="PValue">
                     @dentist.Description
                 </p>
+
                 <p class="PValue">
                     @dentist.Popularity
                 </p>
+
                 <a asp-action="Edit" asp-route-id="@dentist.Id">Edit</a>
+
             </div>
+
         }
     }
 </div>

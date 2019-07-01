@@ -12,7 +12,6 @@ namespace SmartTooth.Data
         public DbSet<Dentist> DentistTable { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
-        {
-        }
+        {}
     }
 }

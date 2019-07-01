@@ -27,7 +27,6 @@ namespace SmartTooth.Models
         [Url]
         [Required(ErrorMessage = "Please enter a  FacebookUrl")]
         public string FacebookUrl { get; set; }
-        
 
         [StringLength(1000, ErrorMessage = "{0} length must be between {2} and {1}.", MinimumLength = 6)]
         [Required(ErrorMessage = "Please enter a  Specialization")]
@@ -40,8 +39,7 @@ namespace SmartTooth.Models
         [StringLength(1000, ErrorMessage = "{0} length must be between {2} and {1}.", MinimumLength = 6)]
         [Required(ErrorMessage = "Please enter a  Description")]
         public string Description { get; set; }
-
-
+        
         public double Popularity { get; set; }
     }
 }

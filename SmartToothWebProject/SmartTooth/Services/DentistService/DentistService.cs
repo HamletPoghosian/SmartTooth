@@ -30,6 +30,7 @@ namespace SmartTooth.Services.Dentist
                 Number = model.Number,
                 Specialization = model.Specialization
             };
+
             await _context.DentistTable.AddAsync(entity);
             await _context.SaveChangesAsync();
             return model;
@@ -55,6 +56,7 @@ namespace SmartTooth.Services.Dentist
                 Number = model.Number,
                 Specialization = model.Specialization
             };
+
             _context.Update(entity);
             await  _context.SaveChangesAsync();
             
